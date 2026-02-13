@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скачать KaspiPrintPro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Переменные из темы приложения */
+            --background: hsl(40, 30%, 98%);
+            --foreground: hsl(20, 10%, 15%);
+            --primary: hsl(155, 100%, 30%);
+            --primary-foreground: hsl(40, 30%, 98%);
+            --card: hsl(40, 30%, 98%);
+            --card-foreground: hsl(20, 10%, 15%);
+            --border: hsl(214.3, 20%, 82%);
+            --radius: 0.5rem;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background);
+            color: var(--foreground);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: linear-gradient(145deg, #ffffff, #f0f0f0);
+            padding: 3rem;
+            border-radius: var(--radius);
+            box-shadow:
+                0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06),
+                0 0 0 1px var(--border);
+            text-align: center;
+            max-width: 480px;
+            width: 90%;
+            border: 1px solid var(--border);
+        }
+
+        h1 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+        }
+
+        p {
+            line-height: 1.6;
+            color: var(--foreground);
+            margin-bottom: 2.5rem;
+            opacity: 0.8;
+        }
+
+        .download-btn {
+            background-color: var(--primary);
+            color: var(--primary-foreground);
+            border: none;
+            padding: 1rem 2.5rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            border-radius: var(--radius);
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 4px 14px 0 rgba(0, 150, 80, 0.3);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 150, 80, 0.4);
+            filter: brightness(1.1);
+        }
+
+        .download-btn:active {
+            transform: translateY(0);
+        }
+
+        .note {
+            margin-top: 2.5rem;
+            font-size: 0.875rem;
+            color: var(--foreground);
+            background: rgba(0, 0, 0, 0.03);
+            padding: 1rem;
+            border-radius: var(--radius);
+            text-align: left;
+            border: 1px solid var(--border);
+        }
+
+        .note strong {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--foreground);
+            font-weight: 600;
+        }
+
+        .note ol {
+            margin: 0.5rem 0 0 1.25rem;
+            padding: 0;
+            opacity: 0.8;
+        }
+
+        .note li {
+            margin-bottom: 0.25rem;
+        }
+
+        /* SVG Icon styles */
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>KaspiPrintPro</h1>
+        <p>Профессиональная автоматизация печати и управление заказами для Kaspi магазина.</p>
+
+        <!-- СЮДА ВСТАВИТЬ ССЫЛКУ ИЗ GITHUB RELEASES -->
+        <a href="#" id="downloadLink" class="download-btn">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+            </svg>
+            Скачать для Windows
+        </a>
+
+        <div class="note">
+            <strong>⚠️ При первом запуске:</strong>
+            Если Windows покажет окно "Система Windows защитила ваш компьютер":
+            <ol>
+                <li>Нажмите <b>"Подробнее"</b></li>
+                <li>Нажмите кнопку <b>"Выполнить в любом случае"</b></li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>
